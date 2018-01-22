@@ -20,6 +20,7 @@ RUN apt-get update; \
 # See https://github.com/marcoraddatz/homebridge-docker#homebridge_version
 # -------------------------------------------------------------------------
 RUN npm install -g homebridge --unsafe-perm
+RUN npm install -g commander
 
 # MISC settings
 COPY avahi-daemon.conf /etc/avahi/avahi-daemon.conf
